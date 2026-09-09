@@ -1,11 +1,10 @@
 ## Dev Domain
 
-The Dev domain is split into two layers: the **OpenClaw Orchestrator** (decides, delegates, validates, reports) and **Claude Code** (executes). The orchestrator never touches code directly — it picks the right Claude Code profile for the job, watches the session, and keeps you in the loop.
+The Dev domain is split into two layers: the **hermes Orchestrator** (decides, delegates, validates, reports) and **Claude Code** (executes). The orchestrator never touches code directly — it picks the right Claude Code profile for the job, watches the session, and keeps you in the loop.
 
 ---
 
-### OpenClaw Dev Orchestrator
-
+### hermes Dev Orchestrator
 **Purpose**
 Observer and coordinator of Claude Code sessions. Pulls work from GitHub, decides which Claude Code profile fits the task, assembles context, monitors the session, validates results, and surfaces a clean debrief to you before anything is acted on.
 
@@ -15,7 +14,7 @@ Observer and coordinator of Claude Code sessions. Pulls work from GitHub, decide
 | GitHub/GitLab API | Pull issues, PRs, review threads, post back results |
 | Claude Code CLI | Spawn, monitor, interrupt, and terminate sessions |
 | Git (read-only) | Inspect diffs Claude Code produced before surfacing to you |
-| Test runner (read) | Check pass/fail after a session completes |
+| Test runner (rea) | Check pass/fail after a session completes |
 | Notification channel | Alert you at key checkpoints (Telegram, ntfy, email) |
 | Task/work queue | Track what's pending, in-progress, done across sessions |
 
@@ -50,19 +49,18 @@ The orchestrator picks a profile when spawning a session. Each profile is a defi
 **Skills**
 - Summarize what a PR does in plain English
 - Flag bugs, logic errors, and security issues with line references
-- Identify missing tests or edge cases
-- Note style/convention deviations without being pedantic
-- Post structured review comment back to GitHub
+- Identify missing tests or edge cases- Note style/convention deviations without being pedantic
+tructured review comment back to GitHub
 
 ---
 
 #### Profile: Bug Fix / Debug
 
-**Purpose** — Given a bug report or error trace, reproduce, narrow root cause, and write a targeted fix.
+- [ ] **Purpose** — Given a bug report or error trace, reproduce, narrow root cause, and write a targeted fix.
 
 **Tools loaded into Claude Code**
 - File read/write
-- Git (diff, log, blame — understand recent changes near the bug)
+-it (diff, log, blame — understand recent changes near the bug)
 - Shell executor (run tests, reproduce the failure)
 - Web search + fetch (look up errors, docs, known issues)
 
@@ -95,7 +93,7 @@ The orchestrator picks a profile when spawning a session. Each profile is a defi
 
 ---
 
-#### Profile: Refactor
+#### Profile: efactor
 
 **Purpose** — Restructure existing code without changing behavior.
 

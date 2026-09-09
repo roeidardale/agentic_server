@@ -7,17 +7,17 @@ Built around your actual life: competitive MMA + a drive for peak performance. N
 
 ## Tools
 
-| Tool | Why |
-|---|---|
-| Training log file reader | Parse and store sessions (CSV, JSON, or free text) |
-| Nutrition DB API (Edamam / USDA) | Macro/micronutrient lookups |
-| Weather API | Factor training conditions |
-| Calendar API | Schedule training blocks, recovery days, fight camp phases |
-| Web search + scraper | Latest sports science, MMA conditioning research |
-| PDF reader | Research papers, training programs |
-| Note writer | Store PRs, session notes, body metrics |
-| Notification channel | Daily check-ins, alerts, reminders |
-| Wearable API (Garmin / Whoop / Oura, optional) | HRV, sleep, resting HR if device available |
+| Tool                                           | Why                                                        |
+| ---------------------------------------------- | ---------------------------------------------------------- |
+| Training log file reader                       | Parse and store sessions (CSV, JSON, or free text)         |
+| Nutrition DB API (Edamam / USDA)               | Macro/micronutrient lookups                                |
+| Weather API                                    | Factor training conditions                                 |
+| Calendar API                                   | Schedule training blocks, recovery days, fight camp phases |
+| Web search + scraper                           | Latest sports science, MMA conditioning research           |
+| PDF reader                                     | Research papers, training programs                         |
+| Note writer                                    | Store PRs, session notes, body metrics                     |
+| Notification channel                           | Daily check-ins, alerts, reminders                         |
+| Wearable API (Garmin / Whoop / Oura, optional) | HRV, sleep, resting HR if device available                 |
 
 ---
 
